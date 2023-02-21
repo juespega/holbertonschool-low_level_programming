@@ -1,8 +1,8 @@
 #include "main.h"
+/* more headers goes there */
+/* betty style doc for function main goes there */
 /**
- *main - Write a function that prints the alphabet, in lowercase, followed by a new line.
- *
- *Return: Always 0 (success)
+ *main - Prints the alphabet, in lowercase, followed by a new line.
  */
 void print_alphabet(void)
 {
