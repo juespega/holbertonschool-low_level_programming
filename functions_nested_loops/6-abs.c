@@ -2,9 +2,9 @@
 /* more headers goes there */
 /* betty style doc for function main goes there */
 /**
- *int _abs - computes the absolute value of an integer.
- * @n: single number input
- * Return: the absolute value of n
+ * _abs - a function that computes the absolute value of an integer
+ * @n: integer number input
+ * Return: absolute value of n
  */
 int _abs(int n)
 {
