@@ -13,10 +13,10 @@ _putchar('\n');
 }
 else
 {
-for (colums = 0; colums <= size; colums++)
+for (colums = 1; colums <= size; colums++)
 {
 _putchar('#');
-for (rows = 1; rows <= size; rows++)
+for (rows = 2; rows <= size; rows++)
 {
 _putchar('#');
 }
