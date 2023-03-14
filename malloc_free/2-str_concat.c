@@ -1,6 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 /**
  * str_concat - get ends of input and add together for size
  * @s1: input one to concat
@@ -9,30 +8,30 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-int end1, end2, i = 0;
-char *array;
-if (s1 == NULL || s2 == NULL)
-s1 = s2 = "";
-for (end1 = 0; end1 <= *s1; end1++)
-{
-}
-for (end2 = 0; end2 <= *s2; end2++)
-{
-}
-array = malloc(sizeof(char) * (end1 + end2 + 1));
-if (array == NULL)
+char *conct;
+int i, k;
+if (s1 == 0)
+s1 = "";
+if (s2 == 0)
+s2 = "";
+for (i = 0; s1[i] != '\0'; i++)
+;
+for (k = 0; s2[k] != '\0'; k++)
+;
+k++;
+conct = malloc(i * (sizeof(*s1)) + k * (sizeof(*s2)));
+if (conct == NULL)
 return (NULL);
-while (*s1)
+i = k = 0;
+for (i = 0; s1[i] != '\0'; i++)
 {
-array[i] = *s1;
-i++;
-s1++;
+conct[i] = s1[i];
 }
-while (*s2)
+for (k = 0; s2[k] != '\0'; k++)
 {
-array[i] = *s2;
+conct[i] = s2[k];
 i++;
-s2++;
 }
-return (array);
+conct[i] = '\0';
+return (conct);
 }
