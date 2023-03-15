@@ -10,7 +10,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 char *newCadena;
-unsigned int k;
+unsigned int i;
 if (nmemb == 0 && size == 0)
 {
 return (NULL);
@@ -20,7 +20,7 @@ if (newCadena == NULL)
 {
 return (NULL);
 }
-for (k = 0; k < nmemb * size; k++)
+for (i = 0; i < (nmemb * size); i++)
 {
 newCadena[k] = 0;
 }
