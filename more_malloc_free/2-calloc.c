@@ -22,7 +22,7 @@ return (NULL);
 }
 for (i = 0; i < (nmemb * size); i++)
 {
-newCadena[k] = 0;
+newCadena[i] = 0;
 }
 return (newCadena);
 }
